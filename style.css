@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+body {
+  font-family: "Oxygen", sans-serif;
+  background-color: lightgrey;
+  padding: 2vh 1vh 0 1vh;
+}
+
+.title {
+  background: url("/images/mlk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  border-radius: 5px 5px 0 0;
+}
+
+.titletext {
+  color: white;
+  width: 90%;
+  padding-top: 20vh;
+  text-align: center;
+}
+.titletext h1 {
+  font-size: 36px;
+}
+.titletext h1 {
+  position: relative;
+  z-index: 1;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  background: lightgreen;
+  opacity: 0.2;
+  height: 0.4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -0.3em;
+}
+
+.titletext p {
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.titletext a {
+  text-decoration: none;
+  font-size: 15px;
+  color: lightgreen;
+}
+
+.titletext a:hover {
+  transition: ease-in-out 1s;
+  font-size: 17px;
+}
+
+.tableofcont {
+  height: 10vh;
+  font-size: 17px;
+  padding-top: 5%;
+}
+
+.tableofcont ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.tableofcont ul li {
+  flex: 1;
+}
+
+.tableofcont ul li a {
+  text-decoration: none;
+  text-transform: lowercase;
+  background-color: gray;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 2px -2px lightgreen;
+}
+
+.tableofcont ul li a:hover {
+  transition: ease-in-out 1s;
+  background-color: rgb(90, 90, 90);
+  color: lightgreen;
+}
+
+.info {
+}
+
+.info h2 {
+  font-size: 30px;
+  color: rgb(65, 65, 65);
+  margin-bottom: 1em;
+}
+
+.info p {
+  font-size: 18px;
+  color: rgb(90, 90, 90);
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+
+.info img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.resources {
+  background: darkgrey;
+  border-radius: 0px 0px 5px 5px;
+
+  text-align: center;
+}
+.resources h3 {
+  font-size: 20px;
+}
+.resources a {
+}
+.footer {
+  background: white;
+}
+
+body {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 600px) {
+  .info {
+    padding-top: 1em;
+  }
+}
+
+@media (min-width: 730px) {
+  .info {
+    padding-top: 2em;
+  }
+}
+
+@media (min-width: 930px) {
+  .titletext {
+    width: 80%;
+    padding-top: 20vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .info {
+    padding-top: 4em;
+  }
+
+  .page3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .page3text {
+    width: 95%;
+  }
+  .dream {
+    box-shadow: 8px 8px 8px 8px lightgrey inset;
+  }
+
+  .titletext {
+    width: 70%;
+    padding-top: 20vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titletext {
+    width: 50%;
+    padding-top: 20vh;
+  }
+}
